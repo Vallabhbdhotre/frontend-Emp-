@@ -3,7 +3,7 @@
     border-radius: 10px;
     margin: 0 5px 10px 5px;
     overflow: hidden;
-    height: 50px;
+    height: 60px;
 }
 
 .nav-item {
@@ -133,8 +133,29 @@ pagination-controls {
     color: aqua;
     font-size: 1rem;
 }
-
-
+pagination-controls span{
+    padding: 3px;
+    background-color: none;
+    color:rgb(0, 238, 255);
+}
+.ngx-pagination .current {
+    width: 1rem;
+    margin: 0.8rem;
+  
+    background: none !important;
+    cursor: pointer !important;
+}
+.pagination-next{
+    border: 2px solid white;
+    cursor: pointer !important; 
+    border-radius: 8px !important;
+}
+.pagination-previous{
+    border: 2px solid white; 
+    cursor: pointer !important; 
+    border-radius: 8px !important;
+    /* background-color:rgb(255, 255, 255,0.5); */
+}
 
 
 
