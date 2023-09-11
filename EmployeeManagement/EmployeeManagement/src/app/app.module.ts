@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { EmplistComponent } from './emplist/emplist.component';
 import { HomeComponent } from './home/home.component';
 import { CreateEmpComponent } from './create-emp/create-emp.component';
@@ -11,7 +12,8 @@ import { UpdateEmpComponent } from './update-emp/update-emp.component';
 import { DetailsEmpComponent } from './details-emp/details-emp.component';
 import { AddRouteComponent } from './add-route/add-route.component';
 import { ViewRouteComponent } from './view-route/view-route.component';
-
+import { NgxPaginationModule } from 'ngx-pagination';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,14 +23,18 @@ import { ViewRouteComponent } from './view-route/view-route.component';
     UpdateEmpComponent,
     DetailsEmpComponent,
     AddRouteComponent,
-    ViewRouteComponent
+    ViewRouteComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-   
+    NgxPaginationModule,
+    NoopAnimationsModule,
+    MatSnackBarModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

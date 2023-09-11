@@ -3,6 +3,6 @@ export class Employee {
     firstname: string|any='';
     lastname: string | any='';
     email: string | any='';
-    phone: number | any='';
+    phone: number |any;
 }
     

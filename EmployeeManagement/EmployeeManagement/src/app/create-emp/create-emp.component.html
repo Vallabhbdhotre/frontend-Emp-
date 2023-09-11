@@ -1,15 +1,15 @@
 <div class="col-md-6 offset-md-3" style="color: white;">
-    <h3 class="text-center">Add Employee</h3>
+    <h3 class="text-center" style="font-size:xx-large; text-transform:uppercase">Add Employee</h3>
     <form #form="ngForm" >
         <div class="form-group">
             <label class="label" for="firstname">First Name</label>
             <input type="text" class="form-control" name="firstname" [(ngModel)]="employee.firstname" #fname="ngModel" required [pattern]="namePattern">
-            <div style="color: rgb(255, 0, 0);" *ngIf="fname.hasError('pattern')">Use hyphen or underscore insted Space...</div>
+            <div style="color: rgb(255, 0, 0);" *ngIf="fname.hasError('pattern')">Enter Valid Name...</div>
         </div>
         <div class="form-group">
             <label class="label" for="firstname">Last Name</label>
             <input type="text" class="form-control" name="lastname" [(ngModel)]="employee.lastname" #lname="ngModel" required [pattern]="namePattern">
-            <div style="color: rgb(255, 0, 0);" *ngIf="lname.hasError('pattern')">Use hyphen or underscore insted Space...</div>
+            <div style="color: rgb(255, 0, 0);" *ngIf="lname.hasError('pattern')">Enter Valid Name...</div>
         </div>
         <div class="form-group">
             <label class="label" for="emailId">Email Id</label>
@@ -23,7 +23,7 @@
             <input type="text" class="form-control" name="phone" [(ngModel)]="employee.phone" #phone="ngModel"  required >
         </div>
         <div class="form-group">
-            <button [disabled]="form.invalid" (click)="onSubmit()" class="btn btn-primary form-control">Submit</button>
+            <button [hidden]="form.invalid" (click)="onSubmit()" class="btn btn-primary form-control">Submit</button>
         </div>
     </form>
 </div>

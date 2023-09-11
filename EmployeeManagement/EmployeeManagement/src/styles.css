@@ -2,6 +2,8 @@
 .navbar {
     border-radius: 10px;
     margin: 0 5px 10px 5px;
+    overflow: hidden;
+    height: 50px;
 }
 
 .nav-item {
@@ -27,10 +29,22 @@
     font-weight: 500;
 }
 
-.btn:hover {
-    background-color: rgb(46, 33, 235);
-
+.btn:nth-child(1) {
+    color: white;
 }
+
+.btn:nth-child(1):hover {
+    background-color: rgb(0, 183, 255);
+}
+
+.btn:nth-child(2):hover {
+    background-color: red;
+}
+
+.btn:nth-child(3):hover {
+    background-color: rgb(0, 4, 255);
+}
+
 
 html,
 body {
@@ -49,25 +63,87 @@ body {
     text-align: center;
     text-transform: uppercase;
 }
-input[type="text"]{
-    
-    background-color: rgb(235, 231, 231 ,0.4);
+
+input[type="text"] {
+    font-weight: bold;
+    color: white;
+    background-color: rgb(235, 231, 231, 0.4);
 }
-input[type="text"]:hover{
+
+/* input[type="text"]:hover{
     background-color: rgb(235, 231, 231 ,0.4);
-}
-.head{
+} */
+.head {
     text-align: center;
-    /* animation :name 2s linear 0.4s infinite; */
     transition: all 0.2s linear;
 }
-.card{
+
+.card {
     display: inline-block;
     padding: 5px;
     margin-left: 10px;
     transition: all 0.3s;
 }
-.card:hover{
+
+.card:hover {
     transform: scale(1.05);
-    
+
+}
+
+.white {
+    /* max-width: 500px; */
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px;
+    display: inline-block;
+    margin: auto;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 5px white;
+}
+
+.white :hover {
+    /* box-shadow: 0 0 5px white; */
+    transform: scale(1.05);
+}
+
+.label {
+    margin-right: 2px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+
+    display: flex;
+    justify-content: center;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+
+}
+
+pagination-controls {
+    color: aqua;
+    font-size: 1rem;
+}
+
+
+
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
 }

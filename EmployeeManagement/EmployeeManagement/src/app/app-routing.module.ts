@@ -14,7 +14,11 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent, pathMatch: 'full' },
   { path: 'addemp', component: CreateEmpComponent, pathMatch: 'full' },
   { path: 'updateemp/:id', component: UpdateEmpComponent },
-  { path: 'details/:id', component: DetailsEmpComponent },
+  {
+    path: 'details/:id', component: DetailsEmpComponent, pathMatch: 'full',
+
+  },
+
   { path: 'addroute', component: AddRouteComponent },
   { path: 'viewroute', component: ViewRouteComponent }
 
@@ -24,4 +28,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule{}

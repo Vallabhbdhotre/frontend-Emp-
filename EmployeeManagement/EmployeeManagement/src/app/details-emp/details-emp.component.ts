@@ -17,7 +17,7 @@ export class DetailsEmpComponent implements OnInit {
      this.id =this.route.snapshot.params['id'];
      this.employee =new Employee();
      this.empservice.getById(this.id).subscribe((data)=>{
-      this.employee=data; 
+     this.employee=data; 
      })
  }
 }
